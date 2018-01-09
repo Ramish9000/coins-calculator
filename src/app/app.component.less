@@ -1,0 +1,62 @@
+@lg: ~"only screen and (min-width: 1200px)";
+@md: ~"only screen and (max-width: 1199px)";
+@sm: ~"only screen and (max-width: 991px)";
+@xs: ~"only screen and (max-width: 767px)";
+
+@PastelBlue: #9ECECE;
+@PowderBlue: #BEE8E8;
+@GhostWhite: #F7F7FF;
+@RaisinBlack: #242424;
+@MediumSpringBud: #CDE77F;
+
+.panel {
+
+	@media @lg {
+		padding-top: 30px;
+	}
+
+	@media @md {
+		padding-top: 30px;
+	}
+
+	@media @sm {
+		padding-top: 25px;
+	}
+
+	@media @xs {
+		padding-top: 15px;
+	}
+
+	.top-panel, .bottom-panel {
+
+		padding: 15px;
+		
+	}
+
+	.top-panel {
+
+		background-color: @RaisinBlack;
+		color: @GhostWhite;
+
+	}
+
+	.bottom-panel {
+
+		background-color: @PowderBlue;
+		overflow: hidden;
+
+		.instructions {
+
+			margin-bottom: 15px;
+
+		}
+
+		.calculator {
+
+			overflow: hidden;
+			
+		}
+
+	}
+
+}
